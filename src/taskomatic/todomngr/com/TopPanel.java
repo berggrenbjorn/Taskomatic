@@ -16,11 +16,14 @@ import javax.swing.JTextField;
 
 public class TopPanel extends JPanel {
 
+	private View view;
+	
 	ImageIcon titleIcon;
 	JLabel title;
 	JButton addTaskBtn;
 	
-	public TopPanel() {
+	public TopPanel(View view) {
+		this.view = view;
 		createPanel();
 	}
 	
@@ -110,9 +113,8 @@ private void showEditPanel() {
 	
 	int result = JOptionPane.showConfirmDialog(null,editPanel, "Edit task",  JOptionPane.OK_CANCEL_OPTION);
 	if (result == JOptionPane.OK_OPTION) {
-		//Add it to the list of tasks
-		//TaskPanel.currentTasks.add(new Task(dateField.getText(), taskField.getText(), categoryField.getText(), priorityField.getText()));
-		//TaskPanel.currentTasks.get(0).printTask();
+		view.getTaskPanel().getTasks().addElement(new Task(taskField.getText(), "", dateField.getText(), categoryField.getText(), Integer.parseInt(priorityField.getText())));
+		//new Task(dateField.getText(), taskField.getText(), categoryField.getText(), priorityField.getText())
 	}
 
 	

@@ -54,11 +54,11 @@ public class Task extends JPanel {
 		cateTF.setFont(new Font("sansserif", Font.ITALIC, 15));
 		prioTF.setFont(new Font("sansserif", Font.PLAIN, 15));
 		
-		//nameTF.setPreferredSize(new Dimension(60, 30));
-		//descTF.setPreferredSize(new Dimension(15, 30));
-		//dateTF.setPreferredSize(new Dimension(15, 30));
-		//cateTF.setPreferredSize(new Dimension(15, 30));
-		//prioTF.setPreferredSize(new Dimension(15, 30));
+		nameTF.setPreferredSize(new Dimension(30, 50));
+		descTF.setPreferredSize(new Dimension(15, 50));
+		dateTF.setPreferredSize(new Dimension(15, 50));
+		cateTF.setPreferredSize(new Dimension(15, 50));
+		prioTF.setPreferredSize(new Dimension(15, 50));
 		
 		GridBagConstraints nameTFConstraints = new GridBagConstraints();
 		GridBagConstraints descTFConstraints = new GridBagConstraints();
@@ -68,7 +68,6 @@ public class Task extends JPanel {
 		
 		nameTFConstraints.gridx = 0;
 		nameTFConstraints.gridy = 0;
-		nameTFConstraints.gridheight = 2;
 		nameTFConstraints.weightx = 1.0;
 		nameTFConstraints.weighty = 1.0;
 		nameTFConstraints.fill = GridBagConstraints.BOTH;
@@ -76,25 +75,25 @@ public class Task extends JPanel {
 		descTFConstraints.gridx = 1;
 		descTFConstraints.gridy = 0;
 		descTFConstraints.weightx = 0.5;
-		descTFConstraints.weighty = 0.5;
+		descTFConstraints.weighty = 1.0;
 		descTFConstraints.fill = GridBagConstraints.BOTH;
 		
-		dateTFConstraints.gridx = 1;
-		dateTFConstraints.gridy = 1;
+		dateTFConstraints.gridx = 2;
+		dateTFConstraints.gridy = 0;
 		dateTFConstraints.weightx = 0.5;
-		dateTFConstraints.weighty = 0.5;
+		dateTFConstraints.weighty = 1.0;
 		dateTFConstraints.fill = GridBagConstraints.BOTH;
 		
-		cateTFConstraints.gridx = 2;
+		cateTFConstraints.gridx = 3;
 		cateTFConstraints.gridy = 0;
 		cateTFConstraints.weightx = 0.5;
-		cateTFConstraints.weighty = 0.5;
+		cateTFConstraints.weighty = 1.0;
 		cateTFConstraints.fill = GridBagConstraints.BOTH;
 		
-		prioTFConstraints.gridx = 2;
-		prioTFConstraints.gridy = 1;
+		prioTFConstraints.gridx = 4;
+		prioTFConstraints.gridy = 0;
 		prioTFConstraints.weightx = 0.5;
-		prioTFConstraints.weighty = 0.5;
+		prioTFConstraints.weighty = 1.0;
 		prioTFConstraints.fill = GridBagConstraints.BOTH;
 		
 		this.add(nameTF, nameTFConstraints);

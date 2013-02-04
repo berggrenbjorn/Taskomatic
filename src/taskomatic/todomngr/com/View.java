@@ -60,7 +60,7 @@ public class View {
 		contentPane.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 		contentPane.setLayout(new GridBagLayout());
 		
-		topPanel = new TopPanel();
+		topPanel = new TopPanel(this);
 		taskPanel = new TaskPanel();
 		botPanel = new BottomPanel();
 		
@@ -108,6 +108,10 @@ public class View {
 		} catch (Exception e) {
 			System.out.println("Error constructing UI.");
 		}
+	}
+	
+	public TaskPanel getTaskPanel() {
+		return taskPanel;
 	}
 
 }
