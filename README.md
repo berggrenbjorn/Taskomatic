@@ -1,4 +1,0 @@
-Taskomatic
-==========
-
-The Taskomatic Repository
