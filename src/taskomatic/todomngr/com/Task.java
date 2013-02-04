@@ -54,11 +54,11 @@ public class Task extends JPanel {
 		cateTF.setFont(new Font("sansserif", Font.ITALIC, 15));
 		prioTF.setFont(new Font("sansserif", Font.PLAIN, 15));
 		
-		nameTF.setPreferredSize(new Dimension(60, 60));
-		descTF.setPreferredSize(new Dimension(15, 30));
-		dateTF.setPreferredSize(new Dimension(15, 30));
-		cateTF.setPreferredSize(new Dimension(15, 30));
-		prioTF.setPreferredSize(new Dimension(15, 30));
+		//nameTF.setPreferredSize(new Dimension(60, 30));
+		//descTF.setPreferredSize(new Dimension(15, 30));
+		//dateTF.setPreferredSize(new Dimension(15, 30));
+		//cateTF.setPreferredSize(new Dimension(15, 30));
+		//prioTF.setPreferredSize(new Dimension(15, 30));
 		
 		GridBagConstraints nameTFConstraints = new GridBagConstraints();
 		GridBagConstraints descTFConstraints = new GridBagConstraints();
